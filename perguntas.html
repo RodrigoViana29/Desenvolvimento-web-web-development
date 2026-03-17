@@ -1,0 +1,104 @@
+# 1) é possivel representar tabelas em HTMl?
+sim é possivel representar tabelas em HTML utilizando a tag <table> e suas sub-tags como <tr> para linhas, <th> para cabeçalhos e <td> para células de dados.
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+<body>
+    <table>
+  <tr>
+    <td>Exemplo</td>
+  </tr>
+</table>   
+</body>
+</html>
+
+# 2) Como estruturar as tags para representar o conteúdo de uma tabela?
+
+<table>
+  <thead>
+    <tr>
+      <th>Coluna 1</th>
+      <th>Coluna 2</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Dado 1</td>
+      <td>Dado 2</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td>Rodapé 1</td>
+      <td>Rodapé 2</td>
+    </tr>
+  </tfoot>
+</table>
+
+# 3) Existe diferença entre as tags de cabeçalhos e Rodapé e as demais tags? Se sim,qual?
+
+<thead> → cabeçalho da tabela
+
+<tbody> → corpo da tabela
+
+<tfoot> → rodapé da tabela
+
+<th> → célula de título 
+
+<td> → célula comum
+
+Exemplo:
+
+<th>Nome</th> <!-- título -->
+<td>João</td> <!-- dado -->
+
+# 4) Como se faz para incluir uma legenda em uma tabela?
+
+<table>
+  <caption>Minha Tabela</caption>
+  <tr>
+    <td>Conteúdo</td>
+  </tr>
+</table>
+
+# 5) É possível representar em HTML tabelas em que uma coluna corresponda a mais de uma linha (ou o contrário)? Se sim como?
+
+sim é possível:
+usando rowspan e colspan
+
+rowspan → ocupa várias linhas
+colspan → ocupa várias colunas
+
+Exemplo 1 :
+<table border="1">
+  <tr>
+    <td rowspan="2">A</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>C</td>
+  </tr>
+</table>
+
+Exemplo 2:
+
+<table border="1">
+  <tr>
+    <td colspan="2">A</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>C</td>
+  </tr>
+</table>
+
+
+
+
